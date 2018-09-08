@@ -11,3 +11,5 @@
 	   lib/config.txt保存了配置信息，包括ssh连接参数，传播该工具时，请记得删除改文件信息，避免敏感数据泄露<br/>
 5.本项目参考项目如下：https://github.com/surpassE/java-sshd<br/>
   本项目路径如下：https://github.com/patrickWuP/uploadTool
+
+如有任何问题请@wupeng6684@gmail.com，谢谢
