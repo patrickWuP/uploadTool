@@ -1,0 +1,22 @@
+# idea ignore
+.idea/*
+*.iml
+*.ipr
+*.iws
+
+# maven ignore
+target/
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+dependency-reduced-pom.xml
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
