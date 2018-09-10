@@ -6,6 +6,7 @@ import com.wup.util.ConfigUtil;
 import com.wup.util.OperateUtil;
 import org.apache.commons.lang3.StringUtils;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -47,13 +48,13 @@ public class MyWindowDemo {
     private TextField serverPwdTf;
 
     //获取更新文件列表按钮
-    private Button getUpdateFileBtn;
+    private JButton getUpdateFileBtn;
     //上传更新文件按钮
-    private Button uploadFileBtn;
+    private JButton uploadFileBtn;
 
-    private Label tipLab;
+    private JLabel tipLab;
     private Dialog tipdialog;
-    private Button okBut;
+    private JButton okBut;
 
     //初始化操作配置信息
     private OperateConfig operateConfig = null;
@@ -67,73 +68,73 @@ public class MyWindowDemo {
         f.setBounds(300,200,600,400);
         f.setLayout(new FlowLayout());
         //本地git项目路径
-        Label labProjectPath = new Label("本地git源项目路径");
+        JLabel labProjectPath = new JLabel("本地git源项目路径");
         gitProjectPathTf = new TextField(60);
         f.add(labProjectPath);
         f.add(gitProjectPathTf);
         //起始git commit id 设置
-        Label labStart = new Label("起始git commit id");
+        JLabel labStart = new JLabel("起始git commit id  ");
         startCommitIdTf = new TextField(60);
         f.add(labStart);
         f.add(startCommitIdTf);
         //结束git commit id 设置
-        Label labEnd = new Label("结束git commit id");
+        JLabel labEnd = new JLabel("结束git commit id  ");
         endCommitIdTf = new TextField(60);
         f.add(labEnd);
         f.add(endCommitIdTf);
         //本地编译后的项目地址
-        Label labCompileProject = new Label("编译后的项目路径");
+        JLabel labCompileProject = new JLabel("编译后的项目路径 ");
         compileProjectPathTf = new TextField(60);
         f.add(labCompileProject);
         f.add(compileProjectPathTf);
         //服务端项目路径
-        Label labServerProject = new Label("服务端的项目路径");
+        JLabel labServerProject = new JLabel("服务端的项目路径 ");
         serverProjectPathTf = new TextField(60);
         f.add(labServerProject);
         f.add(serverProjectPathTf);
         //本地保存更新文件信息
-        Label labLocalFilePath = new Label("保存更新文件路径");
+        JLabel labLocalFilePath = new JLabel("保存更新文件路径 ");
         localFileTf = new TextField(60);
         f.add(labLocalFilePath);
         f.add(localFileTf);
         /**
          * ssh配置参数
          */
-        Label sshConfig = new Label("===============================以下为ssh配置参数===============================");
+        JLabel sshConfig = new JLabel("===============================以下为ssh配置参数===============================");
         f.add(sshConfig);
         //服务端ip
-        Label serverIp = new Label("linux服务端ip      ");
+        JLabel serverIp = new JLabel("linux服务端ip        ");
         serverIpTf = new TextField(60);
         f.add(serverIp);
         f.add(serverIpTf);
         //服务端端口号
-        Label serverPort = new Label("linux服务端端口  ");
+        JLabel serverPort = new JLabel("linux服务端端口  ");
         serverPortTf = new TextField(60);
         f.add(serverPort);
         f.add(serverPortTf);
         //服务端用户名
-        Label serverUserName = new Label("服务端用户名      ");
+        JLabel serverUserName = new JLabel("服务端用户名      ");
         serverUserNameTf = new TextField(60);
         f.add(serverUserName);
         f.add(serverUserNameTf);
         //服务端密码
-        Label serverPwd = new Label("服务端密码         ");
+        JLabel serverPwd = new JLabel("服务端密码          ");
         serverPwdTf = new TextField(60);
         f.add(serverPwd);
         f.add(serverPwdTf);
 
         //获取更新文件列表按钮设置
-        getUpdateFileBtn = new Button("获取更新文件列表");
+        getUpdateFileBtn = new JButton("获取更新文件列表");
         f.add(getUpdateFileBtn);
         //上传更新文件列表按钮
-        uploadFileBtn = new Button("上传更新文件列表");
+        uploadFileBtn = new JButton("上传更新文件列表");
         f.add(uploadFileBtn);
         //弹出提示框设置
         tipdialog = new Dialog(f,"提示信息",true);
         tipdialog.setBounds(400,200,350,130);
         tipdialog.setLayout(new FlowLayout());
-        tipLab = new Label("");
-        okBut = new Button("确定");
+        tipLab = new JLabel("");
+        okBut = new JButton("确定");
         tipdialog.add(tipLab);
         tipdialog.add(okBut);
 
