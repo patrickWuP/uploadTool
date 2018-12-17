@@ -76,13 +76,4 @@ public class SfttpUtil {
             }
         }
     }
-    public static void main(String[] args) {
-        initSftp("192.168.1.249",22,"develop","yrSuper001");
-        try {
-//            upload("C:/project/openapi/target/openapi/wupeng.html","/data/www/tomcat-APP-8.0.29-NODE3/webapps/hkjfapp_bak/wupeng.html");
-            upload("C:/apache-tomcat-6.0.43/webapps/yrtz/css/assessment/animations.css","/data/www/tomcat-lianlian-6.0.43-LOCALTEST2/webapps/hkjf_bak/css/assessment/animations.css");
-        } catch (SftpException e) {
-            e.printStackTrace();
-        }
-    }
 }

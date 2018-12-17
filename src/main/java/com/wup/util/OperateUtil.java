@@ -147,7 +147,7 @@ public class OperateUtil {
      * @return true 不进行处理，false 进行处理
      */
     private static boolean passFileCheck(String path){
-        if (path.startsWith(".settings") || path.startsWith(".gitignore")){
+        if (path.startsWith(".settings") || path.startsWith(".gitignore") || path.equals("pom.xml")){
             return true;
         }
         return false;
